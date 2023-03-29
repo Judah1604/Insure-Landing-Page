@@ -9,11 +9,11 @@ window.addEventListener('resize', makeSiteResponsive)
 document.addEventListener('DOMContentLoaded', makeSiteResponsive)
 
 function makeSiteResponsive() {
-	if (window.innerWidth <= 375) {
+	if (window.innerWidth <= 425) {
 		nav.style.display = 'none'
 		toggle.style.display = 'block'
 	}
-	if (window.innerWidth > 375) {
+	if (window.innerWidth > 425) {
 		nav.style.display = 'flex'
 		toggle.style.display = 'none'
 	}
