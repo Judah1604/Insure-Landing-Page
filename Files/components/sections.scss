@@ -1,0 +1,334 @@
+@import '../base/variables';
+
+nav {
+	padding: 15px 130px;
+	@include flex (space-between, center, row, 0px);
+	text-transform: uppercase;
+
+	.nav {
+		@include flex (center, center, row, 0px);
+
+		.nav-item {
+			padding: 20px;
+		}
+
+		a {
+			color: $dark-grey-violet;
+			text-decoration: none;
+			letter-spacing: 1px;
+			transition: 0.3s;
+
+			&:hover {
+				color: black;
+			}
+		}
+
+		.plans {
+			color: black;
+			border-color: $violet;
+
+			&:hover {
+				background-color: $dark-violet;
+				color: white;
+			}
+		}
+	}
+
+	.toggle {
+		display: none;
+	}
+}
+
+.nav-menu {
+	@include flex (center, center, column, 0px);
+	text-transform: uppercase;
+	background-color: $dark-violet;
+	position: absolute;
+	width: -webkit-fill-available;
+	padding: 30px 0px;
+	top: 75px;
+	z-index: 10;
+	display: none;
+	transition: 0.4s ease;
+
+	.nav-item {
+		padding: 20px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		letter-spacing: 1px;
+		transition: 0.3s;
+	}
+
+	.plans {
+		width: 90%;
+		border-color: $light-gray;
+		margin-bottom: 4em;
+	}
+}
+
+.intro {
+	background-color: $violet;
+	color: $light-gray;
+	padding: 70px 100px;
+	padding-bottom: 120px;
+
+	&::before {
+		content: '';
+		width: 120px;
+		height: 1px;
+		background-color: $light-gray;
+		display: block;
+		margin-bottom: 2.5em;
+	}
+
+	.intro-text {
+		line-height: 1.7;
+		width: 50%;
+
+		h1 {
+			font-size: 3.3em;
+			line-height: 1;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+	}
+
+	.pattern {
+		position: absolute;
+		z-index: 2;
+
+		&:nth-child(1) {
+			left: 0;
+			width: 150px;
+			top: 450px;
+		}
+
+		&:nth-child(6) {
+			right: 0;
+			top: 90px;
+			width: 320px;
+		}
+	}
+
+	.family {
+		position: absolute;
+		right: 15%;
+		top: 150px;
+		height: 500px;
+	}
+
+	button {
+		margin-top: 2em;
+	}
+
+	.familyMobile {
+		width: 100%;
+	}
+
+	.mobile,
+	.familyMobile {
+		display: none;
+	}
+
+	.patternMobileLeft {
+		left: 0;
+		top: 500px;
+		position: absolute;
+	}
+
+	.patternMobileRight {
+		right: 0;
+		top: 850px;
+		position: absolute;
+	}
+}
+
+.we-are-different {
+	margin: auto;
+	margin-top: 14em;
+	color: $dark-violet;
+	width: 80%;
+
+	&::before {
+		content: '';
+		width: 130px;
+		height: 1px;
+		background-color: hsl(273, 4%, 51%);
+		display: block;
+		margin-bottom: 2.5em;
+	}
+
+	h1 {
+		font-size: 4em;
+		margin-bottom: 1em;
+	}
+
+	.features {
+		@include flex (space-between, center, row, 20px);
+
+		.feature {
+
+			img {
+				margin-bottom: 1.5em;
+			}
+
+			h2 {
+				margin-bottom: 15px;
+				font-size: 1.8em;
+			}
+		}
+	}
+}
+
+.work {
+	background-color: $violet;
+	color: $light-gray;
+	padding: 60px 100px;
+	@include flex (space-between, center, row, 0px);
+	margin: auto;
+	margin-top: 10em;
+	margin-bottom: 5em;
+	width: 70%;
+	position: relative;
+	overflow: hidden;
+
+	h1 {
+		font-size: 3.5em;
+		width: 50%;
+		overflow: hidden;
+		line-height: 1;
+	}
+
+	button {
+		z-index: 1;
+	}
+
+	.pattern {
+		position: absolute;
+		right: 0;
+		height: 100%;
+	}
+
+	.patternMobile {
+		display: none;
+	}
+}
+
+footer {
+	background-color: $light-gray;
+	text-transform: uppercase;
+
+	.content {
+		width: 85%;
+		margin: auto;
+	}
+
+	.pattern {
+		position: absolute;
+	}
+
+	.patternMobile {
+		position: absolute;
+		display: none;
+	}
+
+	.top {
+		@include flex (space-between, center, row, 0px);
+		padding-bottom: 20px;
+		margin-bottom: 4em;
+		border-bottom: 1px solid $dark-grey-violet;
+		position: relative;
+		z-index: 2;
+
+		.socials {
+			@include flex (center, center, row, 20px);
+
+			i {
+				font-size: 2.1em;
+			}
+		}
+
+		a {
+			color: $dark-grey-violet;
+			transition: 0.4s;
+
+
+			&:hover {
+				color: $dark-violet;
+			}
+		}
+	}
+
+	.links {
+		@include flex (start, start, row, 220px);
+		position: relative;
+		z-index: 2;
+
+		h3 {
+			font-family: $body-font-family;
+			width: 100%;
+			font-size: 1.1em;
+			color: $dark-grey-violet;
+			margin-bottom: 1em;
+		}
+
+		section {
+			@include flex (center, center, column, 20px);
+
+			a {
+				width: 100%;
+				text-decoration: none;
+				color: $dark-violet;
+				font-size: 1.1em;
+				font-weight: 600;
+				transition: 0.4s;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.attribution {
+		text-align: center;
+		margin-top: 5em;
+		margin-bottom: 2em;
+		text-transform: capitalize;
+
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
+}
+
+h1 {
+	font-size: 3em;
+}
+
+button {
+	font-weight: 600;
+	border: none;
+	outline: none;
+	font-family: inherit;
+	background-color: inherit;
+	border: 1px solid white;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		color: $dark-violet;
+		background-color: white;
+	}
+}
+
+.visible {
+	display: block !important;
+}

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+/* line 3, common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* line 9, common.scss */
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px; }
+
+/* line 14, common.scss */
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 100; }
+
+/*# sourceMappingURL=common.css.map */

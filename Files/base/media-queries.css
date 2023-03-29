@@ -1,0 +1,113 @@
+@media screen and (max-width: 375px) {
+  /* line 2, media-queries.scss */
+  nav {
+    padding: 20px 30px; }
+
+  /* line 6, media-queries.scss */
+  .intro {
+    padding: 0px; }
+    /* line 9, media-queries.scss */
+    .intro .intro-text {
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      margin-top: 4em;
+      margin-bottom: 4em;
+      z-index: 2;
+      position: relative; }
+      /* line 18, media-queries.scss */
+      .intro .intro-text h1 {
+        font-size: 2.7em; }
+    /* line 23, media-queries.scss */
+    .intro::before {
+      display: none; }
+    /* line 27, media-queries.scss */
+    .intro .familyMobile {
+      z-index: 2;
+      position: relative; }
+    /* line 32, media-queries.scss */
+    .intro .mobile,
+    .intro .familyMobile {
+      display: block; }
+    /* line 37, media-queries.scss */
+    .intro .pattern,
+    .intro .family {
+      display: none; }
+
+  /* line 43, media-queries.scss */
+  .we-are-different {
+    margin-top: 13em;
+    text-align: center; }
+    /* line 47, media-queries.scss */
+    .we-are-different::before {
+      margin: auto;
+      margin-bottom: 2.5em; }
+    /* line 52, media-queries.scss */
+    .we-are-different h1 {
+      font-size: 2.7em; }
+    /* line 56, media-queries.scss */
+    .we-are-different .features {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 50px; }
+
+  /* line 62, media-queries.scss */
+  .work {
+    padding: 50px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px; }
+    /* line 67, media-queries.scss */
+    .work h1 {
+      width: 100%;
+      font-size: 2.5em;
+      text-align: center;
+      z-index: 2;
+      position: relative; }
+    /* line 75, media-queries.scss */
+    .work .pattern {
+      display: none; }
+    /* line 79, media-queries.scss */
+    .work .patternMobile {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+  /* line 89, media-queries.scss */
+  footer .pattern {
+    display: none; }
+  /* line 93, media-queries.scss */
+  footer .patternMobile {
+    display: block; }
+  /* line 97, media-queries.scss */
+  footer .content {
+    padding-top: 5em; }
+  /* line 101, media-queries.scss */
+  footer .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px; }
+  /* line 107, media-queries.scss */
+  footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; } }
+
+/*# sourceMappingURL=media-queries.css.map */

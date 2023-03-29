@@ -1,0 +1,115 @@
+@media screen and (max-width: 375px) {
+	nav {
+		padding: 20px 30px;
+	}
+
+	.intro {
+		padding: 0px;
+
+		.intro-text {
+			width: 90%;
+			text-align: center;
+			margin: auto;
+			margin-top: 4em;
+			margin-bottom: 4em;
+			z-index: 2;
+			position: relative;
+
+			h1 {
+				font-size: 2.7em;
+			}
+		}
+
+		&::before {
+			display: none;
+		}
+
+		.familyMobile {
+			z-index: 2;
+			position: relative;
+		}
+
+		.mobile,
+		.familyMobile {
+			display: block;
+		}
+
+		.pattern,
+		.family {
+			display: none;
+		}
+	}
+
+	.we-are-different {
+		margin-top: 13em;
+		text-align: center;
+
+		&::before {
+			margin: auto;
+			margin-bottom: 2.5em;
+		}
+
+		h1 {
+			font-size: 2.7em;
+		}
+
+		.features {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+
+	.work {
+		padding: 50px 30px;
+		flex-direction: column;
+		gap: 40px;
+
+		h1 {
+			width: 100%;
+			font-size: 2.5em;
+			text-align: center;
+			z-index: 2;
+			position: relative;
+		}
+
+		.pattern {
+			display: none;
+		}
+
+		.patternMobile {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	footer {
+
+		.pattern {
+			display: none;
+		}
+
+		.patternMobile {
+			display: block;
+		}
+
+		.content {
+			padding-top: 5em;
+		}
+
+		.top {
+			flex-direction: column;
+			gap: 30px;
+			padding-bottom: 30px;
+		}
+
+		.links {
+			flex-direction: column;
+			gap: 50px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
