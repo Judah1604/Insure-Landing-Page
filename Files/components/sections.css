@@ -81,8 +81,8 @@ nav {
   width: 100%;
   padding: 30px;
   inset: 0;
-  height: 100vh;
   z-index: 10;
+  display: none;
   padding-top: 100px; }
   /* line 54, sections.scss */
   .nav-menu .nav-item {
