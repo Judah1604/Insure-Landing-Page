@@ -16,6 +16,7 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0px;
+  z-index: 15;
   text-transform: uppercase; }
   /* line 8, sections.scss */
   nav .nav {
